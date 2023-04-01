@@ -1,0 +1,38 @@
+.note {
+  padding: 15px;
+  background-color: violet;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.note-textarea {
+  flex: 1;
+  resize: none;
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.note-textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-footer >i{
+    cursor: pointer;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.note:hover .note-footer >i{
+    opacity: 1;
+}
